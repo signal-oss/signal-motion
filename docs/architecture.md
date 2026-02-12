@@ -25,3 +25,11 @@ E --> F[React Adapter]
 E --> G[Future Devtools]
 G --> H[Signal Intelligence Layer]
 ```
+## Design Principles
+
+- System over flexibility
+- Tokens over arbitrary values
+- Semantic presets over raw transforms
+- WAAPI-first runtime
+- CSS-first micro-interactions
+- Framework-agnostic core
