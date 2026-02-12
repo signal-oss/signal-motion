@@ -14,16 +14,14 @@ This architecture enables:
 - Enter/exit state transitions
 - Future integration with Signal intelligence
 
+```mermaid
 graph TD
 
 A[Motion Config] --> B[Token Engine]
-
 B --> C[CSS Utility Generator]
 B --> D[Preset Compiler]
-
 D --> E[Runtime Engine]
-
 E --> F[React Adapter]
-
 E --> G[Future Devtools]
 G --> H[Signal Intelligence Layer]
+```
