@@ -53,7 +53,7 @@ element.animate(keyframes, {
 
 # Runtime Architecture
 
-mermaid
+```mermaid
 
 graph TD
 
@@ -64,26 +64,28 @@ D --> E[WAAPI Executor]
 E --> F[Browser Animation]
 
 ```
+
 ┌─────────────────────────────┐
-│   Signal Motion Runtime     │
-│                             │
-│  - Token Resolver           │
-│  - Preset Compiler          │
-│  - Keyframe Generator       │
-│  - WAAPI Executor           │
-│  - Reduced Motion Policy    │
-└─────────────┬─────────────┘
-              │
-              ▼
+│ Signal Motion Runtime │
+│ │
+│ - Token Resolver │
+│ - Preset Compiler │
+│ - Keyframe Generator │
+│ - WAAPI Executor │
+│ - Reduced Motion Policy │
+└───────────────┬─────────────┘
+│
+▼
 ┌─────────────────────────────┐
-│   Web Animations API        │
-│                             │
-│  - Element.animate()        │
-│  - AnimationPlayer          │
-│  - Timeline control         │
-│  - Playback events          │
+│ Web Animations API │
+│ │
+│ - Element.animate() │
+│ - AnimationPlayer │
+│ - Timeline control │
+│ - Playback events │
 └─────────────────────────────┘
-```
+
+````
 
 ---
 
@@ -108,7 +110,7 @@ When a preset is used, the runtime resolves tokens to concrete values:
     { opacity: 1, transform: "translateY(0)" }
   ]
 }
-```
+````
 
 ## Token names are fully resolved before execution.
 
