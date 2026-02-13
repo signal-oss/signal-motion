@@ -23,7 +23,7 @@ npm install @signal/motion-react
 
 ## Motion Component
 
-    `<Motion />`
+<Motion />
 
 ```tsx
 <Motion preset="slideUp" speed="base" easing="easeOut">
@@ -81,7 +81,7 @@ interface MotionProps {
 
 ## Enter / Exit Animation
 
-    `<Animate />`
+<Animate />
 
 ```tsx
 <Animate when={isOpen} enter="slideUp" exit="fade">
