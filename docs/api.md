@@ -23,7 +23,7 @@ npm install @signal/motion-react
 
 ## Motion Component
 
-    ```<Motion />```
+    `<Motion />`
 
 ```tsx
 <Motion preset="slideUp" speed="base" easing="easeOut">
@@ -81,7 +81,7 @@ interface MotionProps {
 
 ## Enter / Exit Animation
 
-    ```<Animate />```
+    `<Animate />`
 
 ```tsx
 <Animate when={isOpen} enter="slideUp" exit="fade">
@@ -109,10 +109,10 @@ interface AnimateProps {
 
 ## Behavior
 
-When when changes:
+When `when` changes:
 
-==true== → run enter preset
+`true →` → run enter preset
 
-==false== → run exit preset before unmount
+`false →` → run exit preset before unmount
 
 DOM removal occurs after exit animation completes.
