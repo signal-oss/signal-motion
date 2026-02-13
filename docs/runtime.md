@@ -334,15 +334,6 @@ throw new MotionError("INVALID_PRESET", "Preset 'slideUp' missing 'to' values");
 
 Validation occurs before animation execution.
 
-# Future Runtime Capabilities
-
-- Motion analytics
-- Preset usage tracking
-- Unsafe motion detection
-- Performance auditing
-- AI-assisted preset generation
-- Cross-platform runtime
-
 # Summary
 
 The Signal Motion runtime is:
