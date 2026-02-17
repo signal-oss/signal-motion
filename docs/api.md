@@ -113,6 +113,6 @@ When `when` changes:
 
 `true →` → run enter preset
 
-`false →` → run exit preset before unmount
+`false` → run exit preset before unmount
 
 DOM removal occurs after exit animation completes.
