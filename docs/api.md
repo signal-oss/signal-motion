@@ -111,8 +111,53 @@ interface AnimateProps {
 
 When `when` changes:
 
-`true →` → run enter preset
+`true` → run enter preset
 
 `false` → run exit preset before unmount
 
 DOM removal occurs after exit animation completes.
+
+## Hook API
+
+```tsx
+const ref = useMotion("slideUp", {
+  speed: "base",
+});
+
+return <div ref={ref} />;
+```
+
+Low-level hook for manual control.
+
+Signature:
+
+```ts
+function useMotion(
+  preset: string,
+  options?: {
+    speed?: string;
+    easing?: string;
+  },
+): React.RefObject<HTMLElement>;
+```
+
+## Resolution Priority
+
+Motion values resolve in this order:
+
+1. Explicit props
+2. Preset defaults
+3. Global defaults
+4. Reduced motion overrides
+
+Example:
+
+```tsx
+<Motion
+  preset="slideUp" // preset default
+  speed="fast" // explicit override
+/>
+```
+
+`fast` overrides `preset defaultDuration`
+`preset` defaultEasing still applies
